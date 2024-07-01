@@ -25,6 +25,11 @@ Clone an existing repository:
 ```
 git clone <repository_url>
 ```
+To deactivate a GitHub repository on your desktop, you can simply remove the .git directory from your local repository. This effectively "deactivates" Git in that directory.
+```
+rm -rf .git
+```
+
 ## Branching
 
 List all branches:
