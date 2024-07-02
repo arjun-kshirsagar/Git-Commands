@@ -10,7 +10,7 @@ This repository contains a curated list of essential Git commands, organized by 
 4. [Staging](#staging)
 5. [Merging](#merging)
 6. [Remote Repositories](#remote-repositories)
-7. [Stashing](#stashing)
+7. [Stashing and Cleaning](#stashing-and-cleaning)
 8. [Rebasing](#rebasing)
 9. [Undoing Changes](#undoing-changes)
 10. [Viewing History](#viewing-history)
@@ -47,6 +47,10 @@ git checkout <branch_name>
 Create and switch to a new branch:
 ```
 git checkout -b <branch_name>
+```
+Merge a branch into the current branch:
+```
+git merge <branch_name>
 ```
 
 ## Committing
@@ -89,7 +93,7 @@ Pull changes from the remote repository:
 git pull origin <branch_name>
 ```
 
-## Stashing
+## Stashing and Cleaning
 Stash changes:
 ```
 git stash
@@ -97,6 +101,10 @@ git stash
 Apply stashed changes:
 ```
 git stash apply
+```
+Clean untracked files:
+```
+git clean -f
 ```
 
 ## Rebasing
